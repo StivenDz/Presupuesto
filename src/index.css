@@ -15,6 +15,9 @@
 
 body {
     background: rgb(255, 255, 255);
+    height: 100%;
+    position: relative;
+    width: 100%;
 }
 
 header {
@@ -23,6 +26,7 @@ header {
     background: url(./coding.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     display: flex;
     max-height: 390px;
     justify-content: center;
@@ -30,7 +34,7 @@ header {
 
 header .name {
     width: 100%;
-    height: 100%;
+    height: max-content;
     color: #fff;
     padding-left: 40px;
     display: flex;
@@ -50,8 +54,10 @@ header .name h3 {
 main {
     width: 100%;
     height: 100%;
+    min-height: 100vh;
     position: relative;
     padding: 40px;
+    display: flex;
 }
 
 .tec{
@@ -61,16 +67,20 @@ main {
 }
 
 .tec img{
-    width: 40%;
-    height: 40%;
+    width: calc(776px /2);
+    height: calc(454px / 2);
     margin: auto;
+    object-fit: contain;
 }
 
-aside {
-    position: relative;
+.aside {
+    position: sticky;
+    top: 0;
     width: 30%;
+    height: max-content;
     padding: 5px;
     border-radius: 15px;
+    overflow: auto;
 }
 
 .level {
@@ -82,15 +92,16 @@ aside {
 .skills {
     margin: 15px 0px;
     padding-left: 5px;
+    position: relative;
 }
 
-aside h4 {
+.aside h4 {
     padding: 5px;
     font-size: 17px;
     text-transform: uppercase;
 }
 
-aside p {
+.aside p {
     padding: 5px;
     color: rgb(43, 43, 43);
 }
@@ -107,6 +118,9 @@ aside p {
     height: 5px;
     background: rgb(122, 122, 122);
     border-radius: 15px;
+}
+.social{
+    position: relative;
 }
 
 .social b {
@@ -126,7 +140,7 @@ aside p {
 }
 
 .description {
-    position: absolute;
+    position: relative;
     width: 70%;
     height: 100%;
     padding: 25px;
@@ -393,7 +407,7 @@ tbody tr:hover {
 
 /*responsive*/
 @media screen and (max-width:984px) {
-    aside {
+    .aside {
         width: 35%;
 
     }
@@ -468,7 +482,7 @@ tbody tr:hover {
         flex-direction: column;
     }
 
-    aside {
+    .aside {
         order: 2;
         width: 100%;
     }
@@ -495,6 +509,12 @@ tbody tr:hover {
     .wrapper .iconsocial {
         padding: 0;
         margin: 0;
+    }
+}
+@media screen and (max-width:440px){
+    .tec img{
+        width: calc(776px /3);
+        height: calc(454px / 3);
     }
 }
 
