@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scroll-behavior: smooth;
+    font-family: 'Poppins' !important;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: rgb(255, 255, 255);
+}
+
+header {
+    width: 100%;
+    height: 55vh;
+    background: url(./coding.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    max-height: 390px;
+    justify-content: center;
+}
+
+header .name {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header .name h1 {
+    font-size: 4.5vw;
+}
+
+header .name h3 {
+    font-size: 3vw;
+    color: rgba(255, 255, 255, 0.911);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 40px;
+}
+
+.tec{
+    width: 100%;
+    height: max-content;
+    text-align: left;
+}
+
+.tec img{
+    width: 40%;
+    height: 40%;
+    margin: auto;
+}
+
+aside {
+    position: relative;
+    width: 30%;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.level {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 5px;
+}
+
+.skills {
+    margin: 15px 0px;
+    padding-left: 5px;
+}
+
+aside h4 {
+    padding: 5px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+aside p {
+    padding: 5px;
+    color: rgb(43, 43, 43);
+}
+
+.have {
+    width: 40px;
+    height: 5px;
+    background: rgb(15, 15, 15);
+    border-radius: 15px;
+}
+
+.limit {
+    width: 40px;
+    height: 5px;
+    background: rgb(122, 122, 122);
+    border-radius: 15px;
+}
+
+.social b {
+    padding-left: 15px;
+    margin-bottom: 7px;
+}
+
+.social a {
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+}
+
+.social a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.description {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    padding: 25px;
+    border-radius: 15px;
+    top: 0;
+    right: 0;
+}
+
+.description>div {
+    margin-bottom: 30px;
+    padding: 0 40px;
+}
+
+.description>div h3 {
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.description>div>p {
+    padding: 20px 0;
+    color: rgb(43, 43, 43);
+    line-height: 25px;
+    text-align: justify;
+}
+
+.education div .institucion,
+.history div .institucion {
+    padding-bottom: 15px;
+
+}
+
+.history div{
+    margin-bottom: 20px;
+}
+
+.dis,
+.hr-res {
+    display: none;
+}
+
+.decol {
+    color: rgb(53, 53, 53);
+}
+
+
+.limiter {
+    width: 100%;
+}
+
+.container-table100 {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 33px 30px;
+}
+
+.wrap-table100 {
+    width: 1170px;
+}
+
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+table * {
+    position: relative;
+}
+
+table td,
+table th {
+    padding-left: 8px;
+}
+
+table thead tr {
+    height: 60px;
+    background: #000000;
+}
+
+table tbody tr {
+    height: 50px;
+}
+
+table tbody tr:last-child {
+    border: 0;
+}
+
+table td,
+table th {
+    text-align: left;
+}
+
+table td.l,
+table th.l {
+    text-align: right;
+}
+
+table td.c,
+table th.c {
+    text-align: center;
+}
+
+table td.r,
+table th.r {
+    text-align: center;
+}
+
+
+.table100-head th {
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+tbody tr {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: #353535;
+    line-height: 1.2;
+    font-weight: unset;
+}
+
+tbody tr:hover {
+    color: #555555;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.column1 {
+    width: 260px;
+    padding-left: 40px;
+}
+
+.column2 {
+    width: 160px;
+}
+
+.column3 {
+    width: 245px;
+}
+
+.column4 {
+    width: 110px;
+    text-align: right;
+}
+
+.column5 {
+    width: 170px;
+    text-align: right;
+}
+
+.column6 {
+    width: 222px;
+    text-align: right;
+    padding-right: 62px;
+}
+
+
+@media screen and (max-width: 992px) {
+    table {
+        display: block;
+    }
+
+    table>*,
+    table tr,
+    table td,
+    table th {
+        display: block;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tbody tr {
+        height: auto;
+        padding: 37px 0;
+    }
+
+    table tbody tr td {
+        padding-left: 40% !important;
+        margin-bottom: 24px;
+    }
+
+    table tbody tr td:last-child {
+        margin-bottom: 0;
+    }
+
+    table tbody tr td:before {
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        color: #999999;
+        line-height: 1.2;
+        font-weight: unset;
+        position: absolute;
+        width: 40%;
+        left: 30px;
+        top: 0;
+    }
+
+    table tbody tr td:nth-child(1):before {
+        content: "N°";
+    }
+
+
+    table tbody tr td:nth-child(2):before {
+        content: "Descripcion";
+    }
+    table tbody tr td:nth-child(3):before {
+        content: "Cantidad";
+    }
+
+    table tbody tr td:nth-child(4):before {
+        content: "Precio";
+    }
+
+
+
+    .column4,
+    .column5,
+    .column6 {
+        text-align: left;
+    }
+
+    .column4,
+    .column5,
+    .column6,
+    .column1,
+    .column2,
+    .column3 {
+        width: 100%;
+    }
+
+    tbody tr {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-table100 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/*responsive*/
+@media screen and (max-width:984px) {
+    aside {
+        width: 35%;
+
+    }
+
+    .description {
+        width: 65%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:855px) {
+    .dis {
+        display: block;
+    }
+
+    .social b {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:799px) {
+    .description>div {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:740px) {
+
+
+    header {
+        border-radius: 0px;
+    }
+
+    header div img {
+        border-radius: 0px;
+    }
+
+    header .name {
+        padding-left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper {
+        left: 0;
+    }
+}
+
+@media screen and (max-width:670px) {
+    header .contentImg {
+        width: 40%;
+    }
+
+
+}
+
+@media screen and (max-width:595px) {
+    body {
+        padding: 0;
+    }
+
+    header .name h1{
+        font-size: 6vw;
+    }
+
+    header .name h3{
+        font-size: 6vw;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        order: 2;
+        width: 100%;
+    }
+
+    .description {
+        position: relative;
+        width: 100%;
+    }
+
+    .hr-res {
+        display: block;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:465px) {
+    .wrapper {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .wrapper .iconsocial {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:435px) {
+    main{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .wrapper .iconsocial {
+        width: 35px;
+        height: 30px;
+    }
+}
